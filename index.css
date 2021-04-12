@@ -1,0 +1,15 @@
+:root {
+    --color-bg: #12500A;  /* Background */
+    --color-txt: #FFFFFF;/* Text */
+}
+
+body {
+    /* Background */
+    background-color: var(--color-bg);
+    
+    /* Text */
+    font-size: calc(1em + 1vmin);
+    font-family: Ubuntu, "times new roman", times, roman, serif;
+    text-align: center;
+    color: var(--color-txt);
+}
