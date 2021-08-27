@@ -52,6 +52,15 @@ hr {
     border: 1px solid var(--color-ipau);
 }
 
+footer {
+    margin: 1em auto auto;
+    background-color: grey;
+}
+
+footer a {
+    color: white;
+}
+
 .rrss-btn {
     display: flex;
     align-items: center;
