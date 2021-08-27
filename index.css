@@ -1,5 +1,6 @@
 :root {
     --color-ipau: #12500A;
+    --color-bg: #151515;
     --font-family: Consolas, "Times New Roman", times, roman, serif;
 }
 
@@ -11,14 +12,12 @@ html {
     color: white;
     font-size: calc(1em + 1vmin);
 
-    background-color: black;
+    background-color: var(--color-bg);
 }
 
 body {
     margin: 0;
     padding: 0;
-    /* Background */
-    /*background-color: var(--color-ipau);*/
     
     /* Text */
     font-size: 1rem;
@@ -63,7 +62,7 @@ hr {
     height: min-content;
     padding: auto;
     border: 0.15em solid green;
-    border-radius: 5px;
+    border-radius: 0.5em;
     margin: auto auto 10px auto;
     
     background: var(--color-ipau);
@@ -71,10 +70,16 @@ hr {
     cursor: pointer;
 }
 
+.rrss-btn:hover {
+    background: green;
+    box-shadow: 0em 0em 0.2em 0.1em white;
+}
+
 .rrss-btn img {
     order: 1;
 
     width: calc(2em + 1vw);
+    height: auto;
     margin: auto;
 }
 
