@@ -43,9 +43,7 @@ article {
 hr {
     display: block;
     height: 1px;
-    width: 50%;
     margin: 0.5em auto;
-    border: 1px solid var(--color-ipau);
 }
 
 footer {
@@ -66,8 +64,6 @@ a {
 
 #tag {
     display: block;
-    min-width: 20%;
-    max-width: 40%;
     margin: auto;
 }
 
@@ -117,6 +113,13 @@ a {
 }
 
 @media screen and (max-width: 480px) {
+    hr {
+        width: 90%;
+        border: 1px solid var(--color-ipau);
+    }
+    #tag {
+        width: 90%;
+    }
     .btns {
         flex-flow: column wrap;
     }
@@ -147,6 +150,13 @@ a {
 }
 
 @media screen and (min-width: 480px) {
+    hr {
+        width: 50%;
+        border: 1px solid var(--color-ipau);
+    }
+    #tag {
+        width: 50%;
+    }
     .btns {
         flex-flow: row wrap;
     }
