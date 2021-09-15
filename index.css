@@ -10,6 +10,7 @@
 
 body {
 
+    min-height: 100vh;
     margin: 0%;
 
     /* Text */
@@ -84,7 +85,12 @@ hr {
 }
 
 footer {
-    margin: 0%;
+    display: flex;
+    flex-flow: column nowrap;
+    justify-content: flex-end;
+    align-items: center;
+
+    margin: auto 0% 0%;
 }
 
 #footer-tag {
