@@ -112,6 +112,13 @@ footer {
     body {
         width: 100vw;
     }
+    #nav-bar {
+        justify-content: center;
+    }
+    #nav-bar a {
+        width: 25%;
+        border-left: 2px solid var(--color-ipau);
+    }
 }
 
 @media (min-width: 480px) and (max-width: 1000px) {
