@@ -32,6 +32,7 @@ body {
 
 #header {
     width: 100%;
+    padding: 0 15px;
     border-bottom: 1px solid var(--color-ipau);
 }
 
@@ -79,6 +80,10 @@ body {
     background-color: var(--color-ipau);
 }
 
+main {
+    padding: 0 15px;
+}
+
 a {
     color: white;
     cursor: pointer;
@@ -91,6 +96,7 @@ footer {
     align-items: center;
 
     border-top: 1px solid var(--color-ipau);
+    padding: 0 15px;
 }
 
 #footer-tag {
