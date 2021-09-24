@@ -123,6 +123,8 @@ footer {
     }
     #nav-bar a {
         width: 25%;
+    }
+    #nav-bar a:first-child {
         border-left: 2px solid var(--color-ipau);
     }
 }
