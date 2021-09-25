@@ -1,0 +1,136 @@
+<!doctype html>
+<html>
+<head>
+<meta charset='UTF-8'><meta name='viewport' content='width=device-width initial-scale=1'>
+<title>Mi primera vez con el análisis de frecuencias</title>
+</head>
+<body><h2 id='mi-primera-vez-con-el-análisis-de-frecuencias'>Mi primera vez con el análisis de frecuencias</h2>
+<h3 id='introducción'>Introducción</h3>
+<p>Hace un par de semanas tuve mi primera clase práctica de <a href='https://es.wikipedia.org/wiki/Criptolog%C3%ADa'>Criptología</a>. El profesor nos mandó descifrar el siguiente texto:</p>
+<p><em>Ivxzoo, Xzvhzi&#39;h xrksvi uzooh rm gsv xzgvtlib lu hfyhgrgfgrlm nlmlzokszyvgrx xrksvih (r.v., vzxs vovnvmg uiln gsv kozrmgvcg droo yv ivkozxvw drgs z fmrjfv vovnvmg uiln gsv hkzxv lu xrksvigvcgh). Uli gsrh ivzhlm, z xrkvsvigvcg kivhvievh gsv ivozgrev uivjfvmxb zg dsrxs kozrmgvcg vovnvmgh zkkvzi rm gsv xliivhklmwrmt kozrmgvcg. Rm Evimzn xrksvi, vmxibkgrlm rh kviulinvw yb nvzmh lu vCxofhrev-LI (CLI) oltrxzo lkvizgrlm (kozrmgvcg rh CLIvw drgs zm vmxibkgrlm pvb). Ru zm vmxibkgrlm pvb rh xslhvm izmwlnob zmw rh zg ovzhg zh olmt zh gsv kozrmgvcg gl yv vmxibkgvw, CLI vmxibkgrlm (lmv-grnv kzw) rh kilezyob (kviuvxgob) hvxfiv.</em></p>
+<p>El profesor no nos dijo qué tipo de cifrado se le aplicó al mensaje, pero nos dio dos pistas: El texto original estaba en <strong>inglés</strong>, y nos dio la primera palabra descifrada:</p>
+<ul>
+<li>R -&gt; I</li>
+<li>E -&gt; v</li>
+<li>C -&gt; k</li>
+<li>A -&gt; z</li>
+<li>L -&gt; o</li>
+<li>L -&gt; o</li>
+
+</ul>
+<p>Las dos &#39;L&#39; cifradas como &#39;O&#39; permiten suponer que el texto está cifrado utilizando un algoritmo de sustitución monoalfabeto (por tanto cada letra del texto original se cifrará de la misma forma). Los mensajes cifrados mediante este tipo de algoritmos son susceptibles a ser descifrados mediante <strong><a href='https://es.wikipedia.org/wiki/An%C3%A1lisis_de_frecuencias'>análisis de frecuencias</a></strong>.</p>
+<p>En ese momento en lugar de ponerme manualmente a descifrar el texto o a buscar alguna herramienta para hacerlo, me pregunté cómo lo haría usando mis conocimientos de programación.</p>
+<h3 id='desarrollo'>Desarrollo</h3>
+<h4 id='obtener-las-frecuencias-de-las-letras-del-texto'>Obtener las frecuencias de las letras del texto</h4>
+<p>Para empezar creé una función que me devolviese un diccionario con las letras y las veces que aparecían en el texto cifrado ordenado de más a menos apariciones:</p>
+<pre><code class='language-python' lang='python'>def get_freq(string: str) -&gt; dict:
+    freq = {}
+    for c in string:
+        if c.isalpha():
+            if c in freq:
+                freq[c] += 1
+            else:
+                freq[c] = 1
+    return {k: v for k,v in sorted(freq.items(), key=lambda item: item[1], reverse=True)}
+</code></pre>
+<p>A esta función le pasé el texto cifrado en mayúsculas (para no tener que preocuparme por la diferencia entre mayúsculas y minúsculas) y me devolvió el siguiente diccionario:</p>
+<pre><code>{&#39;V&#39;: 74, &#39;G&#39;: 44, &#39;R&#39;: 39, &#39;I&#39;: 37, &#39;M&#39;: 37, &#39;Z&#39;: 36, &#39;L&#39;: 31, &#39;K&#39;: 27, &#39;H&#39;: 26, &#39;X&#39;: 25, &#39;O&#39;: 25, &#39;S&#39;: 19, &#39;B&#39;: 13, &#39;U&#39;: 11, &#39;N&#39;: 11, &#39;C&#39;: 11, &#39;W&#39;: 8, &#39;F&#39;: 7, &#39;Y&#39;: 6, &#39;E&#39;: 5, &#39;T&#39;: 4, &#39;D&#39;: 4, &#39;J&#39;: 2, &#39;P&#39;: 2}
+</code></pre>
+<h4 id='obtener-las-letras-más-frecuentes-del-idioma'>Obtener las letras más frecuentes del idioma</h4>
+<p>Lo siguiente fue buscar en internet las letras más frecuentes del idioma y meterlas en una lista:</p>
+<pre><code class='language-python' lang='python'>ENGLISH = [&#39;E&#39;,&#39;T&#39;,&#39;A&#39;,&#39;O&#39;,&#39;I&#39;,&#39;N&#39;,&#39;S&#39;,&#39;H&#39;,&#39;R&#39;,&#39;D&#39;,&#39;L&#39;,&#39;C&#39;,&#39;U&#39;,&#39;M&#39;,&#39;W&#39;,&#39;F&#39;,&#39;G&#39;,&#39;Y&#39;,&#39;P&#39;,&#39;B&#39;,&#39;V&#39;,&#39;K&#39;,&#39;J&#39;,&#39;X&#39;,&#39;Q&#39;,&#39;Z&#39;]
+</code></pre>
+<p>Por comodidad también hice una función que me devolviera una lista con las letras más frecuentes del texto pasándole el diccionario con las frecuencias:</p>
+<pre><code class='language-python' lang='python'>def get_letters(freqs: dict) -&gt; tuple:
+    return (x[0] for x in freqs)
+</code></pre>
+<p>Output:</p>
+<pre><code>[&#39;V&#39;, &#39;G&#39;, &#39;R&#39;, &#39;I&#39;, &#39;M&#39;, &#39;Z&#39;, &#39;L&#39;, &#39;K&#39;, &#39;H&#39;, &#39;X&#39;, &#39;O&#39;, &#39;S&#39;, &#39;B&#39;, &#39;U&#39;, &#39;N&#39;, &#39;C&#39;, &#39;W&#39;, &#39;F&#39;, &#39;Y&#39;, &#39;E&#39;, &#39;T&#39;, &#39;D&#39;, &#39;J&#39;, &#39;P&#39;]
+</code></pre>
+<h4 id='llevar-un-registro-de-las-letras-descifradas'>Llevar un registro de las letras descifradas</h4>
+<p>Ya había conseguido las letras más frecuentes tanto del texto cifrado como del idioma en el que estaba el texto en claro, así que podía empezar a hacer las suposiciones, pero antes empecé a anotar aquellas letras de las que conocía su correspondencia en un diccionario:</p>
+<pre><code class='language-python' lang='python'># Clave: Caracter en claro.
+# Valor: Caracter cifrado.
+confirmed = {
+    &#39;R&#39;: &#39;I&#39;,
+    &#39;E&#39;: &#39;V&#39;,
+    &#39;C&#39;: &#39;X&#39;,
+    &#39;A&#39;: &#39;Z&#39;,
+    &#39;L&#39;: &#39;O&#39;,
+}
+</code></pre>
+<h4 id='realizar-suposiciones'>Realizar suposiciones</h4>
+<p>La técnica del análisis de frecuencias se basa en que dado un texto lo suficientemente largo las letras más frecuentes del texto coincidirán probablemente con las letras más frecuentes del idioma en el que está escrito.</p>
+<p>Programé una función que emparejaba las letras de ambas listas quitando previamente las parejas ya conocidas:</p>
+<pre><code class='language-python' lang='python'>def get_keys(letters: list, confirmed: dict = {}, common: tuple = ENGLISH) -&gt; dict:
+    k = [c for c in common if c not in confirmed]
+    v = [c for c in letters if c not in confirmed.values()]
+    d = confirmed.copy()
+    for i in range(len(k)):
+        if i &gt;= len(v):
+            d[k[i]] = &#39;&#39;
+        else:
+            d[k[i]] = v[i]
+    return d
+</code></pre>
+<p>Como el texto cifrado no tenía todas las letras del idioma, las letras menos frecuentes de este las emparejé con el carácter nulo <code>&#39;&#39;</code>. La salida de la función con las parejas conocidas hasta ahora sería:</p>
+<pre><code>{&#39;R&#39;: &#39;I&#39;, &#39;E&#39;: &#39;V&#39;, &#39;C&#39;: &#39;X&#39;, &#39;A&#39;: &#39;Z&#39;, &#39;L&#39;: &#39;O&#39;, &#39;T&#39;: &#39;G&#39;, &#39;O&#39;: &#39;R&#39;, &#39;I&#39;: &#39;M&#39;, &#39;N&#39;: &#39;L&#39;, &#39;S&#39;: &#39;K&#39;, &#39;H&#39;: &#39;H&#39;, &#39;D&#39;: &#39;S&#39;, &#39;U&#39;: &#39;B&#39;, &#39;M&#39;: &#39;U&#39;, &#39;W&#39;: 
+&#39;N&#39;, &#39;F&#39;: &#39;C&#39;, &#39;G&#39;: &#39;W&#39;, &#39;Y&#39;: &#39;F&#39;, &#39;P&#39;: &#39;Y&#39;, &#39;B&#39;: &#39;E&#39;, &#39;V&#39;: &#39;T&#39;, &#39;K&#39;: &#39;D&#39;, &#39;J&#39;: &#39;J&#39;, &#39;X&#39;: &#39;P&#39;, &#39;Q&#39;: &#39;&#39;, &#39;Z&#39;: &#39;&#39;}
+</code></pre>
+<h4 id='realizar-deducciones'>Realizar deducciones</h4>
+<p>Antes de ir a ciegas confiando en las estadísticas y en las probabilidades miré el texto cifrado buscando patrones (como dígrafos o trígrafos) o ayudándome de caracteres no alfabéticos (como el apóstrofe, que en ingés es muy probable que vaya seguido de una &#39;s&#39;) para descubrir correspondencias que fui anotando en el diccionario.</p>
+<h4 id='empezar-a-descifrar'>Empezar a descifrar</h4>
+<p>Llegado a este punto tocaba empezar a sustituír letras, y como no lo iba a hacer a mano hice otra función que lo hiciera por mí:</p>
+<pre><code class='language-python' lang='python'>def decrypt(text: str, keys: dict = {}, confirmed: dict = {}) -&gt; str:
+    reversed = dict((v, k) for k, v in keys.items())
+    string = &quot;&quot;
+    for c in text:
+        if c in confirmed.values():
+            string += &quot;\033[0;32m&quot; # GREEN
+            string += reversed[c]
+            string += &quot;\033[0m&quot; # END
+        elif c in reversed:
+            string += &quot;\033[1;33m&quot; # YELLOW
+            string += reversed[c]
+            string += &quot;\033[0m&quot; # END
+        elif c.isalpha():
+            string += &quot;\033[0;31m&quot; # RED
+            string += c
+            string += &quot;\033[0m&quot; # END
+        else:
+            string += c
+        
+    return string
+</code></pre>
+<p>La función anterior recorre el texto cifrado haciendo las sustituciones. Le di un toque de color mediante <a href='https://es.wikipedia.org/wiki/C%C3%B3digo_escape_ANSI'>códigos ANSI</a> para dejar el resultado más bonito en una terminal.</p>
+<h4 id='montándolo-todo'>Montándolo todo</h4>
+<p>Ahora tocaba ir comparando el texto cifrado con el texto devuelto por la función e ir haciendo más deducciones. Para facilitar la labor escribí algunas líneas más con información sacada de las funciones anteriores:</p>
+<pre><code class='language-python' lang='python'>with open(&quot;freq.txt&quot;, &#39;r&#39;) as f:
+    string = f.read().upper()
+
+freq = get_freq(string)
+letters = get_letters(freq)
+keys = get_keys(letters, confirmed, ENGLISH)
+
+print(&#39;★ &#39; + &quot;\033[0;31m&quot; + &quot;ORIGINAL&quot; + &quot;\033[0m&quot;, end=&#39; &#39;)
+print(&#39;★ &#39; + &quot;\033[1;33m&quot; + &quot;EXPECTED&quot; + &quot;\033[0m&quot;, end=&#39; &#39;)
+print(&#39;★ &#39; + &quot;\033[0;32m&quot; + &quot;CONFIRMED&quot; + &quot;\033[0m&quot;)
+
+print(decrypt(string))
+print(&quot;Frecuencias en el texto cifrado:&quot;, freq)
+print()
+print(decrypt(string, confirmed, confirmed))
+print(&quot;Letras confirmadas (Plano, Cifrado):&quot;, sorted(confirmed.items()))
+print(&quot;Letras por descifrar:&quot;, [c for c in letters if c not in confirmed.values()])
+print()
+print(decrypt(string, keys, confirmed))
+print(&quot;Sustitucion aplicada (Plano, Cifrado):&quot;, sorted(dict((k,v) for k, v in keys.items() if k not in confirmed).items()))
+</code></pre>
+<p>Mostrando el siguiente resultado:</p>
+<p><img src="../img/Terminal.png" alt="Terminal con mucha información"  /></p>
+<h3 id='conclusión'>Conclusión</h3>
+<p>A medida que se van hallando correspondencias de letras se puede llegar a observar que la &#39;A&#39; se cifra con la &#39;Z&#39;, la &#39;B&#39; con la &#39;Y&#39;, la &#39;C&#39; con la &#39;X&#39;, etc. Este dato no es necesario para conseguir descifrar el texto, pues con algo de tiempo puede lograrse mediante el análisis de frecuencias. Sin embargo, nos aclara qué cifrado se le aplicó al mensaje: <a href='https://es.wikipedia.org/wiki/Atbash'>Atbash</a>.</p>
+<p>El texto original es:</p>
+<p><em>Recall, Caesar&#39;s cipher falls in the category of substitution monoalphabetic ciphers (i.e., each element from the plaintext will be replaced with a unique element from the space of ciphertexts). For this reason, a cipehertext preserves the relative frequency at which plaintext elements appear in the corresponding plaintext. In Vernam cipher, encryption is performed by means of eXclusive-OR (XOR) logical operation (plaintext is XORed with an encryption key). If an encryption key is chosen randomly and is at least as long as the plaintext to be encrypted, XOR encryption (one-time pad) is provably (perfectly) secure.</em></p>
+</body>
+</html>

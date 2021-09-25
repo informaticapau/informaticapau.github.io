@@ -1,0 +1,37 @@
+:root {
+    --color-post: rgb(224, 221, 59);
+}
+
+pre code {
+    border: 1px solid black;
+    text-align: start;
+    font-size: medium;
+}
+
+main {
+    font-size: medium;
+    text-align: left;
+}
+
+main>h2, main>h3, main>h4, main>h5, main>h6, main a {
+    color: var(--color-post);
+}
+
+main>h2 {
+    font-size: xx-large;
+}
+
+main>h3 {
+    font-size: x-large;
+}
+
+main>h4 {
+    font-size: large;
+}
+
+main img {
+    display: block;
+    width: 90%;
+    border: 1px solid var(--color-ipau, #12500A);
+    margin: auto;
+}

@@ -1,0 +1,15 @@
+:root {
+    --color-post: rgb(224, 221, 59);
+}
+
+article {
+    text-align: left;
+}
+
+article a {
+    text-decoration: none;
+}
+
+article h2 {
+    color: var(--color-post);
+}
