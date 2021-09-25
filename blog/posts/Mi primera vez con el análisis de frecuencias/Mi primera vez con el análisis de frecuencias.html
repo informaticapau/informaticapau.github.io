@@ -184,25 +184,25 @@ confirmed = {
             anteriores:</p>
 
         <pre><code class='language-python' lang='python'>with open(&quot;freq.txt&quot;, &#39;r&#39;) as f:
-        string = f.read().upper()
-    
-    freq = get_freq(string)
-    letters = get_letters(freq)
-    keys = get_keys(letters, confirmed, ENGLISH)
-    
-    print(&#39;★ &#39; + &quot;\033[0;31m&quot; + &quot;ORIGINAL&quot; + &quot;\033[0m&quot;, end=&#39; &#39;)
-    print(&#39;★ &#39; + &quot;\033[1;33m&quot; + &quot;EXPECTED&quot; + &quot;\033[0m&quot;, end=&#39; &#39;)
-    print(&#39;★ &#39; + &quot;\033[0;32m&quot; + &quot;CONFIRMED&quot; + &quot;\033[0m&quot;)
-    
-    print(decrypt(string))
-    print(&quot;Frecuencias en el texto cifrado:&quot;, freq)
-    print()
-    print(decrypt(string, confirmed, confirmed))
-    print(&quot;Letras confirmadas (Plano, Cifrado):&quot;, sorted(confirmed.items()))
-    print(&quot;Letras por descifrar:&quot;, [c for c in letters if c not in confirmed.values()])
-    print()
-    print(decrypt(string, keys, confirmed))
-    print(&quot;Sustitucion aplicada (Plano, Cifrado):&quot;, sorted(dict((k,v) for k, v in keys.items() if k not in confirmed).items()))</code></pre>
+    string = f.read().upper()
+
+freq = get_freq(string)
+letters = get_letters(freq)
+keys = get_keys(letters, confirmed, ENGLISH)
+
+print(&#39;★ &#39; + &quot;\033[0;31m&quot; + &quot;ORIGINAL&quot; + &quot;\033[0m&quot;, end=&#39; &#39;)
+print(&#39;★ &#39; + &quot;\033[1;33m&quot; + &quot;EXPECTED&quot; + &quot;\033[0m&quot;, end=&#39; &#39;)
+print(&#39;★ &#39; + &quot;\033[0;32m&quot; + &quot;CONFIRMED&quot; + &quot;\033[0m&quot;)
+
+print(decrypt(string))
+print(&quot;Frecuencias en el texto cifrado:&quot;, freq)
+print()
+print(decrypt(string, confirmed, confirmed))
+print(&quot;Letras confirmadas (Plano, Cifrado):&quot;, sorted(confirmed.items()))
+print(&quot;Letras por descifrar:&quot;, [c for c in letters if c not in confirmed.values()])
+print()
+print(decrypt(string, keys, confirmed))
+print(&quot;Sustitucion aplicada (Plano, Cifrado):&quot;, sorted(dict((k,v) for k, v in keys.items() if k not in confirmed).items()))</code></pre>
 
         <p>Mostrando el siguiente resultado:</p>
         <p><img src="./img/Terminal.png" alt="Terminal con mucha información" /></p>
