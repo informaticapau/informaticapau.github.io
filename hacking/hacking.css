@@ -1,0 +1,8 @@
+.documents li{
+    text-align: left;
+    font-size: large;
+}
+
+#thm-badge {
+    margin: 10px;
+}
