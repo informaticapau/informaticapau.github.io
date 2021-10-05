@@ -97,6 +97,8 @@ footer {
 
     border-top: 1px solid var(--color-ipau);
     padding: 0 15px;
+
+    font-size: medium;
 }
 
 #footer-tag {
@@ -110,7 +112,7 @@ footer {
 #footer-info {
     margin: 1em auto auto;
 
-    font-size: medium;
+    font-size: small;
 }
 
 
