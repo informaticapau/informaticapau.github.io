@@ -4,7 +4,7 @@
     --color-entry-desc: #ffffff;
 }
 
-.write-ups {
+.write-ups-container {
     margin: 10px auto;
 
     display: flex;
@@ -46,7 +46,7 @@
 
 @media screen and (max-width: 480px) {
 
-    .write-ups {
+    .write-ups-container {
         flex-flow: column nowrap;
     }
 
@@ -81,7 +81,7 @@
 
 @media screen and (min-width: 481px) {
 
-    .write-ups {
+    .write-ups-container {
         flex-flow: row wrap;
     }
 
