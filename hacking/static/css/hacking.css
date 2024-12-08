@@ -1,0 +1,64 @@
+.writeups {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+  align-items: center;
+  margin: 10px auto;
+}
+
+.writeups a.writeup {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-between;
+  align-items: center;
+  box-sizing: border-box;
+  width: 15em;
+  height: 15em;
+  padding: 5px;
+  border: 3px solid #12500a;
+  border-radius: 15px;
+  margin: 1%;
+  background-color: black;
+  text-overflow: ellipsis;
+  text-decoration: none;
+}
+
+.writeups a.writeup .writeup-title {
+  height: 10%;
+  color: #e0dd3b;
+  text-overflow: clip;
+  font-size: 1.5em;
+}
+
+.writeups a.writeup .writeup-img {
+  max-width: 90%;
+  max-height: 70%;
+}
+
+.writeups a.writeup .writeup-img:hover, .writeups a.writeup .writeup-img:focus {
+  max-width: 80%;
+  max-height: 60%;
+}
+
+.writeups a.writeup .writeup-date {
+  height: 10%;
+  color: white;
+  text-overflow: ellipsis;
+}
+
+.writeups a.writeup:hover, .writeups a.writeup:focus {
+  border-color: green;
+  background-color: #202020;
+  box-shadow: 0em 0em 0.2em 0.1em green;
+}
+
+@media screen and (max-width: 425px) {
+  .writeups a.writeup {
+    width: 45vw;
+    height: 45vw;
+  }
+  .writeups a.writeup .writeup-title {
+    height: 1em;
+    font-size: 1em;
+  }
+}
