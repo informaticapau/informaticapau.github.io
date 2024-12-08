@@ -1,0 +1,30 @@
+/* Footer */
+
+$footer-color: #151515;
+
+footer {
+    display: flex;
+    flex-flow: row wrap;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+
+    width: 100%;
+    padding: 1em 0;
+    margin-top: auto;
+
+    background-color: $footer-color;
+
+    div {
+
+        width: 19em;
+        padding: 0 1em;
+        border-left: 1px solid white;
+        border-right: 1px solid white;
+        text-align: center;
+    }
+
+    a {
+        color: white;
+    }
+}

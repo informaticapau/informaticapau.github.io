@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+
+{% block head %}{% include "base_head.html" %}{% endblock head %}
+
+<body>
+    <!-- Header -->
+    {% filter indent(width=4) -%}
+    {% block header %}{% include "base_header.html" %}{% endblock header %}
+    {%- endfilter %}
+
+    <!-- Nav -->
+    {% filter indent(width=4) -%}
+    {% block nav %}{% include "base_nav.html" %}{% endblock nav %}
+    {%- endfilter %}
+
+    <!-- Content -->
+    {% filter indent(width=4) -%}
+    {% block content %}{% endblock %}
+    {%- endfilter %}
+
+    <!-- Footer -->
+    {% filter indent(width=4) -%}
+    {% block footer %}{% include "base_footer.html" %}{% endblock %}
+    {%- endfilter %}
+</body>
+
+</html>

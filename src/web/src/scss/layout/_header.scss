@@ -1,0 +1,64 @@
+/* Header */
+@import "../colors";
+$header-height: 10vh;
+@mixin shadow-filter {
+    filter: drop-shadow(2px 0 0 white) 
+        drop-shadow(0 2px 0 white) 
+        drop-shadow(-2px 0 0 white)
+        drop-shadow(0 -2px 0 white);
+}
+
+header {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: $header-height;
+    border-bottom: 1px solid black;
+    background: $color-header;
+
+    a {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+
+        > #logo {
+            visibility: hidden;
+
+            position: absolute;
+            top: 0;
+            left: 0;
+
+            box-sizing: border-box;
+            width: $header-height;
+            max-height: $header-height;
+            border: 3px solid white;
+            border-radius: 50%;
+        }
+
+        > #webname {
+            text-align: center;
+            box-sizing: border-box;
+            width: 75vw;
+            max-height: 90%;
+            margin: auto;
+
+            overflow: hidden;
+
+            @include shadow-filter;
+        }
+
+        @media screen and (min-width: 425px) {
+            & > #logo {
+                visibility: visible;
+            }
+
+            & > #webname {
+                width: 50vw;
+            }
+        }
+    }
+}

@@ -1,0 +1,26 @@
+<head>
+    <!-- Meta info -->
+    {% filter indent(width=4) -%}
+    {% block meta -%}
+    {% include "includes/base_head/meta.html" %}
+    {%- endblock %}
+    {%- endfilter %}
+
+    <!-- Favicon & title -->
+    <link rel="icon" type="image/x-icon" href="/static/img/favicon.ico">
+    <title>{% block title %}Informaticapau{% endblock %}</title>
+
+    <!-- Style -->
+    {% filter indent(width=4) -%}
+    {% block style -%}
+    {% include "includes/base_head/style.html" %}
+    {%- endblock %}
+    {%- endfilter %}
+
+    <!-- Scripts -->
+    {% filter indent(width=4) -%}
+    {% block scripts -%}
+    {% include "includes/base_head/scripts.html" %}
+    {%- endblock %}
+    {%- endfilter %}
+</head>

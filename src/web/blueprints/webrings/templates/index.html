@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block head %}{% include "includes/head.html" %}{% endblock head %}
+
+{% block content -%}
+
+<main>
+    <h1 id="webrings">Web Rings</h1>
+    <article>
+        <section>
+            <h2 id="community">Comunidad</h2>
+            <div class="webring">
+                <a href="https://www.informaticapau.com">
+                    <img src="/{{ blueprint }}/static/img/88x31.gif" alt="Link to Informaticapau">
+                </a>
+                {%- for wb in webrings['community'] %}
+                <a target="_blank" href="{{ wb['url']}}">
+                    <img src="{{ wb['badge'] }}" alt="Link to {{ wb['name'] }}" onerror="">
+                </a>
+                {%- endfor %}
+            </div>
+        </section>
+    </article>
+</main>
+
+{%- endblock content %}

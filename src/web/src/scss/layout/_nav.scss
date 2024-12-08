@@ -1,0 +1,44 @@
+/* Nav */
+@import "../colors";
+$nav-text-size: 20px;
+$nav-padding: 5px;
+
+nav {
+    display: flex;
+    flex-flow: row wrap;
+    row-gap: $nav-padding;
+    justify-content: center;
+    align-items: center;
+
+    box-sizing: border-box;
+    width: 100%;
+    height: fit-content;
+    padding: $nav-padding 0;
+    border: solid black;
+    border-width: 1px 0;
+    margin: 0 auto;
+    background-color: $color-nav;
+
+    a {
+        display: flex;
+        align-items: center;
+
+        box-sizing: border-box;
+        padding: 0 1em;
+        border: 1px solid white;
+        border-radius: 10px;
+        margin: 0 0.5vw;
+
+        color: inherit;
+        background-color: $color-ipau;
+        font-size: $nav-text-size;
+        text-decoration: none;
+
+        &:hover,
+        &:focus {
+            background-color: green;
+            border-color: white;
+            box-shadow: 0 0 2px 1px white;
+        }
+    }
+}

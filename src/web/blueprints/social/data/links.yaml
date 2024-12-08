@@ -1,0 +1,31 @@
+rrss: 
+  name: "Redes Sociales"
+  links:
+    Instagram: 
+      url: https://www.instagram.com/informaticapau/
+      logo: https://simpleicons.vercel.app/instagram/FF0069
+    Twitter/X:
+      url:  https://twitter.com/informaticapau
+      logo: https://simpleicons.vercel.app/x/FFFFFF
+    GitHub:
+      url: https://github.com/informaticapau
+      logo: https://simpleicons.vercel.app/github/FFFFFF
+    YouTube:
+      url: https://www.youtube.com/@informaticapau
+      logo: https://simpleicons.vercel.app/youtube/FF0000
+
+comunidad:
+  name: "Comunidad"
+  links:
+    WhatsApp:
+      url: https://chat.whatsapp.com/Jz6dbqz6gug0MGuj3hlsYZ
+      logo: https://simpleicons.vercel.app/whatsapp/25D366
+    Discord:
+      url: https://discord.com/invite/UXZuAvW
+      logo: https://simpleicons.vercel.app/discord/5865F2
+    Telegram:
+      url: https://t.me/informaticapau_telegram
+      logo: https://simpleicons.vercel.app/telegram/26A5E4
+    Signal:
+      url: https://signal.group/#CjQKIKE-DGLyEskhoE3eFYTOu-AWvMUyeY1coRkSTjaGIcL1EhCCf67nbMyquzz1i94Y28Gv
+      logo: https://simpleicons.vercel.app/signal/3B45FD

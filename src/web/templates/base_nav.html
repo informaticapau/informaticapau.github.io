@@ -1,0 +1,11 @@
+<nav>
+    {%- set nav_links = {
+        'Home': '/home',
+        'Redes sociales': '/social',
+        'Webrings': '/webrings'
+    }-%}
+    
+    {%- for k,v in nav_links.items() %}
+    <a class="nav-link" href="{{ v }}">{{ k }}</a>
+    {%- endfor %}
+</nav>

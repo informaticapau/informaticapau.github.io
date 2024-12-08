@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+
+{% block head %}{% include "includes/head.html" %}{% endblock head %}
+
+{% block content -%}
+
+<main>
+    <h1 id="enlaces_de_interes">Enlaces de interés</h1>
+    <article>
+        {%- for section in links %}
+        <section>
+            <h2 id="{{ section }}">{{ links[section]['name'] }}</h2>
+            <div class="links">
+                {%- for l in links[section]['links'] %}
+                <a href="{{ links[section]['links'][l].url }}" target="_blank">
+                    <figure>
+                        <img src="{{ links[section]['links'][l].logo }}" alt="Logo de {{ l }}">
+                        <figcaption>{{ l }}</figcaption>
+                    </figure>
+                </a>
+                {%- endfor %}
+            </div>
+        </section>
+        {%- endfor %}
+    </article>
+</main>
+
+{%- endblock content %}
