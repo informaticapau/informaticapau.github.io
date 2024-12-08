@@ -8,7 +8,6 @@
 ![HTML5](https://img.shields.io/badge/HTML5-black?logo=html5&logoColor=white&labelColor=grey&color=%23E34F26)
 ![SASS](https://img.shields.io/badge/SASS-black?logo=sass&logoColor=white&labelColor=grey&color=%23CC6699)
 ![Jinja](https://img.shields.io/badge/Jinja-black?logo=jinja&logoColor=white&labelColor=grey&color=%23B41717)
-![Docker](https://img.shields.io/badge/Docker-black?logo=docker&logoColor=white&labelColor=grey&color=%232496ED)
 
 </div>
 
