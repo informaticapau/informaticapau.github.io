@@ -10,6 +10,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-white?logo=javascript&logoColor=white&label=%20&labelColor=grey&color=%23F7DF1E)
 ![SASS](https://img.shields.io/badge/SASS-black?logo=sass&logoColor=white&labelColor=grey&color=%23CC6699)
 ![Jinja](https://img.shields.io/badge/Jinja-black?logo=jinja&logoColor=white&labelColor=grey&color=%23B41717)
+![YAML](https://img.shields.io/badge/YAML-black?logo=yaml&logoColor=white&labelColor=grey&color=%23CB171E)
 
 </div>
 
