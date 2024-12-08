@@ -1,0 +1,16 @@
+- name: C3TF v2.23
+  img: /hacking/static/img/writeups/ctfs/c3tf_v2.23.png
+  file: /hacking/static/files/writeups/ctfs/2023-03-29_C3TF_v.2.23.pdf
+  date: ['29','03','2023']
+- name: Cibergal
+  img: /hacking/static/img/writeups/ctfs/Cibergal.png
+  file: /hacking/static/files/writeups/ctfs/2021-11-10_Cibergal.pdf
+  date: ['10','11','2021']
+- name: DEADFACE
+  img: /hacking/static/img/writeups/ctfs/DEADFACE_2021.png
+  file: /hacking/static/files/writeups/ctfs/2021-10-15_DEADFACE_CTF.pdf
+  date: ['15','10','2021']
+- name: DECONSTRUCT.F
+  img: /hacking/static/img/writeups/ctfs/DECONSTRUCT.F.png
+  file: /hacking/static/files/writeups/ctfs/2021-10-01_DeconstruCT.F.pdf
+  date: ['01','10','2021']

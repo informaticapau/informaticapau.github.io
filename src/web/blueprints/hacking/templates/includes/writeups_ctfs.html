@@ -1,0 +1,10 @@
+<div class="writeups">
+    {%- for writeup in writeups %}
+    <a class="writeup" href="{{ writeup.file }}">
+        <span class="writeup-title">{{ writeup.name }}</span>
+        <img class="writeup-img" src="{{ writeup.img }}" alt="{{ writeup.name }} logo">
+        {% set ctf_day,ctf_month,ctf_year = writeup.date[0],writeup.date[1],writeup.date[2] -%}
+        <span class="writeup-date"><time datetime="{{ctf_year}}-{{ctf_month}}-{{ctf_day}}">{{ctf_day}}/{{ctf_month}}/{{ctf_year}}</time></span>
+    </a>
+    {%- endfor %}
+</div>

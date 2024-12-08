@@ -1,0 +1,77 @@
+@import "../../../../src/scss/colors";
+
+$color-writeup-title: rgb(224, 221, 59);
+$color-writeup-date: white;
+$writeup-width: 15em;
+
+.writeups {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+
+    margin: 10px auto;
+
+    a.writeup {
+        display: flex;
+        flex-flow: column nowrap;
+        justify-content: space-between;
+        align-items: center;
+
+        box-sizing: border-box;
+        width: $writeup-width;
+        height: $writeup-width;
+        padding: 5px;
+        border: 3px solid $color-ipau;
+        border-radius: 15px;
+        margin: 1%;
+
+        background-color: black;
+
+        text-overflow: ellipsis;
+        text-decoration: none;
+
+        .writeup-title {
+            height: 10%;
+            color: $color-writeup-title;
+            text-overflow: clip;
+            font-size: 1.5em;
+        }
+
+        .writeup-img {
+            max-width: 90%;
+            max-height: 70%;
+
+            &:hover,
+            &:focus {
+                max-width: 80%;
+                max-height: 60%;
+            }
+        }
+
+        .writeup-date {
+            height: 10%;
+            color: $color-writeup-date;
+            text-overflow: ellipsis;
+        }
+
+        &:hover,
+        &:focus {
+            border-color: green;
+            background-color: #202020;
+            box-shadow: 0em 0em 0.2em 0.1em green;
+        }
+
+        @media screen and (max-width: 425px) {
+            & {
+                width: 45vw;
+                height: 45vw;
+
+                .writeup-title {
+                    height: 1em;
+                    font-size: 1em;
+                }
+            }
+        }
+    }
+}
