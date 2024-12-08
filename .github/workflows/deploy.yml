@@ -29,6 +29,7 @@ jobs:
     - name: Generate Site
       run: |
         python src/sitebuilder.py
+        cp CNAME dist/
 
     # Paso 5: Desplegar a GitHub Pages
     - name: Deploy to GitHub Pages
