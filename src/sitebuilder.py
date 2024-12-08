@@ -1,10 +1,11 @@
-import os
-import logging
-import shutil
-import sass
-import yaml
 import json
+import logging
+import os
+import sass
+import shutil
+import yaml
 from jinja2 import Environment, FileSystemLoader
+
 
 # LOGGER configuration
 logging.basicConfig(level=logging.INFO,
@@ -37,7 +38,9 @@ def copy_static_files(static_dir: str, dist_static_dir: str):
         LOGGER.debug(f'Copied static files from {static_dir}')
 
 
-def render_templates(templates_dir: str, context: dict = {}) -> str:
+def render_templates(templates_dir: str, context: dict = None) -> str:
+    if context is None:
+        context = {}
     index_html: str = os.path.join(templates_dir, 'index.html')
     if os.path.isfile(index_html):
 
@@ -45,14 +48,16 @@ def render_templates(templates_dir: str, context: dict = {}) -> str:
         web_templates_dirs: list[str] = [templates_dir, WEB_TEMPLATES_DIR]
         env = Environment(loader=FileSystemLoader(web_templates_dirs))
 
-        # Load the and render the index.html template
+        # Load and render the index.html template
         return env.get_template('index.html').render(context)
     else:
         LOGGER.error('index.html template not found')
         return ''
 
 
-def process_templates(blueprint: str, context: dict = {}):
+def process_templates(blueprint: str, context: dict = None):
+    if context is None:
+        context = {}
     templates_dir: str = os.path.join(
         WEB_BLUEPRINTS_DIR, blueprint, 'templates')
     if os.path.isdir(templates_dir):
@@ -76,7 +81,7 @@ def process_src_files():
     compile_scss_files(scss_dir, css_dir)
 
 
-def proccess_data_files(data_dir: str) -> dict:
+def process_data_files(data_dir: str) -> dict:
     data: dict = {}
     if os.path.isdir(data_dir):
         for file_name in os.listdir(data_dir):
@@ -106,7 +111,11 @@ def process_blueprint(blueprint: str):
 
     # Process data files
     data_dir: str = os.path.join(blueprint_dir, 'data')
-    context: dict = {'blueprint': blueprint, **proccess_data_files(data_dir)}
+    data_files: dict = process_data_files(data_dir)
+    context: dict = {
+        'blueprint': blueprint,
+        **data_files
+    }
     LOGGER.debug(f'Processed data files for {blueprint}: {context}')
 
     # Process templates
