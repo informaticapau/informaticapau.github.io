@@ -1,0 +1,41 @@
+main a:link, main a:visited {
+  color: white;
+}
+
+main a:hover, main a:active, main a:focus {
+  color: lightgreen;
+}
+
+#subjects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  align-items: center;
+  margin: 15px 0;
+  padding: 0;
+  list-style: none;
+}
+
+.subject {
+  width: 30em;
+  border: 3px solid #12500a;
+  border-radius: 15px;
+  background-color: black;
+  text-align: left;
+}
+
+.subject summary {
+  color: #e0dd3b;
+  font-size: 1.5em;
+  text-align: center;
+}
+
+.subject:hover, .subject:focus {
+  border-color: green;
+  background-color: #202020;
+  box-shadow: 0em 0em 0.2em 0.1em green;
+}
+
+.subject a {
+  text-decoration: none;
+}
