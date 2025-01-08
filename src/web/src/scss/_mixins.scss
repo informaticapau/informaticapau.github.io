@@ -1,0 +1,8 @@
+@mixin hover_effect {
+    &:hover,
+    &:focus {
+        border-color: green;
+        background-color: #202020;
+        box-shadow: 0em 0em 0.2em 0.1em green;
+    }
+}

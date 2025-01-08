@@ -1,0 +1,19 @@
+<section>
+    <h3>Asignaturas</h3>
+    <div id="subjects">
+        {%- for subject in wuolah.subjects %}
+        <details class="subject">
+            <summary>{{ subject.name }}</summary>
+            <ul>
+                {%- for topic in subject.topics %}
+                <li>
+                    <a href="{{ topic.url }}">
+                        {{ topic.title }}
+                    </a>
+                </li>
+                {%- endfor %}
+            </ul>
+        </details>
+        {%- endfor %}
+    </div>
+</section>

@@ -1,0 +1,24 @@
+{% extends 'layout.html' %}
+
+{% block head %}{% include "includes/head.html" %}{% endblock head %}
+
+{% block content -%}
+
+<main>
+    <h1>Apuntes</h1>
+    <article>
+        <h2 id="writeups">Wuolah</h2>
+        <setion>
+            <h3>Perfil</h3>
+            <a href="{{ wuolah.profile }}"> {{ wuolah.profile }} </a>
+            
+            <h3>Enlace de invitación</h3>
+            <a href="{{ wuolah.invitation }}"> {{ wuolah.invitation }} </a>
+        </section>
+        {% filter indent(width=8) -%}
+        {% include "includes/wuolah.html" %}
+        {%- endfilter %}
+    </article>
+</main>
+
+{%- endblock content %}

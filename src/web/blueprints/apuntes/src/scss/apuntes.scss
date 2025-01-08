@@ -1,0 +1,46 @@
+@import "../../../../src/scss/colors";
+@import "../../../../src/scss/mixins";
+
+main a {
+
+    &:link,
+    &:visited{
+        color: white;
+    }
+
+    &:hover,
+    &:active,
+    &:focus {
+        color: lightgreen;
+    }
+}
+
+#subjects {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    align-items: center;
+    margin: 15px 0;
+    padding: 0;
+    list-style: none;
+}
+
+.subject {
+    width: 30em;
+    border: 3px solid $color-ipau;
+    border-radius: 15px;
+    background-color: black;
+    text-align: left;
+
+    summary {
+        color: #e0dd3b;
+        font-size: 1.5em;
+        text-align: center;
+    }
+
+    @include hover_effect;
+
+    a {
+        text-decoration: none;
+    }
+}
