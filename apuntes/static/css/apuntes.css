@@ -9,8 +9,8 @@ main a:hover, main a:active, main a:focus {
 #subjects {
   display: flex;
   flex-flow: row wrap;
-  justify-content: space-around;
-  align-items: center;
+  justify-content: center;
+  align-items: flex-start;
   margin: 15px 0;
   padding: 0;
   list-style: none;
@@ -20,6 +20,7 @@ main a:hover, main a:active, main a:focus {
   width: 30em;
   border: 3px solid #12500a;
   border-radius: 15px;
+  margin: 7.5px;
   background-color: black;
   text-align: left;
 }
