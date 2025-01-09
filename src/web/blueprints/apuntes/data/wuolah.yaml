@@ -3,11 +3,88 @@ invitation: https://wuolah.com/join-ifmaipu4
 subjects:
   - name: "Programación I"
     topics:
-    - title: "[Pro1] T1 - Conceptos Basicos"
-      url: https://wuolah.com/apuntes/programacion-i/pro1-apuntes-pro1-t1-conceptos-basicos-pdf-8719522?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
-    - title: "[Pro1] T2 - Control de Flujo"
-      url: https://wuolah.com/apuntes/programacion-i/pro1-apuntes-pro1-t2-control-de-flujo-pdf-8719523?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
-    - title: "[Pro1] T3 - Subprogramas"
-      url: https://wuolah.com/apuntes/programacion-i/pro1-apuntes-pro1-t3-subprogramas-pdf-8719524?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
-    - title: "[Pro1] T4 - Estructuras de Datos"
-      url: https://wuolah.com/apuntes/programacion-i/pro1-apuntes-pro1-t4-estructuras-de-datos-pdf-8719525?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+      - title: "[Pro1] T1 - Conceptos Basicos"
+        url: https://wuolah.com/apuntes/programacion-i/pro1-apuntes-pro1-t1-conceptos-basicos-pdf-8719522?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+      - title: "[Pro1] T2 - Control de Flujo"
+        url: https://wuolah.com/apuntes/programacion-i/pro1-apuntes-pro1-t2-control-de-flujo-pdf-8719523?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+      - title: "[Pro1] T3 - Subprogramas"
+        url: https://wuolah.com/apuntes/programacion-i/pro1-apuntes-pro1-t3-subprogramas-pdf-8719524?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+      - title: "[Pro1] T4 - Estructuras de Datos"
+        url: https://wuolah.com/apuntes/programacion-i/pro1-apuntes-pro1-t4-estructuras-de-datos-pdf-8719525?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+
+  - name: "Diseño Software"
+    topics:
+      - title: "[DS] T1 - Diseño Software"
+        url: https://wuolah.com/apuntes/diseno-software/ds-apuntes-ds-t1-diseno-software-pdf-8725516?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+      - title: "[DS] T2 - Elementos Básicos de la Orientación a Objetos"
+        url: https://wuolah.com/apuntes/diseno-software/ds-apuntes-ds-t2-elementos-basicos-de-la-orientacion-a-objeto-8725517?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+      - title: "[DS] T3 - Propiedades Básicas de la Orientación a Objetos"
+        url: https://wuolah.com/apuntes/diseno-software/ds-apuntes-ds-t3-propiedades-basicas-de-la-orientacion-a-obje-8725837?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+      - title: "[DS] T4 - UML"
+        url: https://wuolah.com/apuntes/diseno-software/ds-apuntes-ds-t4-uml-pdf-8726693?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+      - title: "[DS] T5 - Principios de Diseño"
+        url: https://wuolah.com/apuntes/diseno-software/ds-apuntes-ds-t5-principios-de-diseno-pdf-8726894?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+      - title: "[DS] T6 - Patrones de Diseño"
+        url: https://wuolah.com/apuntes/diseno-software/ds-apuntes-ds-t6-patrones-de-diseno-pdf-8728849?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+      - title: "[DS] Apuntes sobre Java"
+        url: https://wuolah.com/apuntes/diseno-software/ds-apuntes-de-java-pdf-8729280?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+
+  - name: "Interfaces Persona - Máquina"
+    topics:
+      - title: "[IPM] T1 - Interfaces de Usuario"
+        url: https://wuolah.com/apuntes/interfaces-persona-maquina/ipm-apuntes-ipm-t1-interfaces-de-usuario-pdf-8723356?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+      - title: "[IPM] T2 - Diseño de interfaces Móviles"
+        url: https://wuolah.com/apuntes/interfaces-persona-maquina/ipm-apuntes-ipm-t2-diseno-de-interfaces-moviles-pdf-8723357?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+      - title: "[IPM] T3 - Diseño de Interfaces Web"
+        url: https://wuolah.com/apuntes/interfaces-persona-maquina/ipm-apuntes-ipm-t3-diseno-de-interfaces-web-pdf-8723358?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+      - title: "[IPM] T4 - Accesibilidad"
+        url: https://wuolah.com/apuntes/interfaces-persona-maquina/ipm-apuntes-ipm-t4-accesibilidad-pdf-8723359?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+      - title: "[IPM] Materia Adicional"
+        url: https://wuolah.com/apuntes/interfaces-persona-maquina/ipm-apuntes-ipm-materia-adicional-pdf-8723608?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+
+  - name: "Internet y Sistemas Distribuidos"
+    topics:
+      - title: "[ISD] T1 - Introducción al desarrollo de aplicaciones empresariales"
+        url: https://wuolah.com/apuntes/internet-y-sistemas-distribuidos/isd-apuntes-1-introduccion-desarrollo-aplicaciones-empresarial-9654243?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+      - title: "[ISD] T2 - Java DataBase Connectivity"
+        url: https://wuolah.com/apuntes/internet-y-sistemas-distribuidos/isd-apuntes-2-jdbc-pdf-9654244?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+      - title: "[ISD] T3 - Diseño e implementación de la capa Modelo"
+        url: https://wuolah.com/apuntes/internet-y-sistemas-distribuidos/isd-apuntes-3-diseno-implementacion-capa-modelo-pdf-9654245?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+      - title: "[ISD] T4 - Pruebas de integración de la capa Modelo"
+        url: https://wuolah.com/apuntes/internet-y-sistemas-distribuidos/isd-apuntes-4-pruebas-integracion-capa-modelo-pdf-9654246?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+      - title: "[ISD] T5 - Lenguajes de intercambio de datos XML y JSON"
+        url: https://wuolah.com/apuntes/internet-y-sistemas-distribuidos/isd-apuntes-5-lenguajes-intercambio-datos-xml-json-pdf-9654247?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+      - title: "[ISD] T6 - Diseño e Implementación de Servicios Web REST"
+        url: https://wuolah.com/apuntes/internet-y-sistemas-distribuidos/isd-apuntes-6-diseno-implementacion-servicios-web-rest-pdf-9654248?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+      - title: "[ISD] T7 - Diseño e Implementación de Servicios RPC"
+        url: https://wuolah.com/apuntes/internet-y-sistemas-distribuidos/isd-apuntes-7-diseno-implementacion-servicios-rpc-pdf-9654249?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+
+  - name: "Administración de Sistemas Operativos"
+    topics:
+      - title: "[ASO] T1 - El administrador del sistema"
+        url: https://wuolah.com/apuntes/administracion-de-sistemas-operativos/aso-apuntes-t1-el-administrador-del-sistema-pdf-8148042?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+
+  - name: "Programación Integrativa"
+    topics:
+      - title: "[PI] T1 - Historia de los lenguajes de programación"
+        url: https://wuolah.com/apuntes/programacion-integrativa/pi-apuntes-pi-t1-historia-de-los-lenguajes-de-programacion-pd-8082709?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+      - title: "[PI] T2 - Shell Scripting"
+        url: https://wuolah.com/apuntes/programacion-integrativa/pi-apuntes-pi-t2-shell-scripting-pdf-8082710?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+
+  - name: "Administración de Infraestructuras y Sistemas Informáticos"
+    topics:
+      - title: "[AISI] T1 - Despliegue y Administración de Infraestructura"
+        url: https://wuolah.com/apuntes/administracion-de-infraestructuras-y-sistemas-informaticos/aisi-apuntes-aisi-t1-despliegue-y-administracion-de-infraestruc-7492868?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+      - title: "[AISI] T2 - Tecnologías de Virtualización"
+        url: https://wuolah.com/apuntes/administracion-de-infraestructuras-y-sistemas-informaticos/aisi-apuntes-aisi-t2-tecnologias-de-virtualizacion-pdf-7492869?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+      - title: "[AISI] T3 - Sistemas de Almacenamiento"
+        url: https://wuolah.com/apuntes/administracion-de-infraestructuras-y-sistemas-informaticos/aisi-apuntes-aisi-t3-sistemas-de-almacenamiento-pdf-7492870?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+      - title: "[AISI] T4 - Infraestructuras clúster"
+        url: https://wuolah.com/apuntes/administracion-de-infraestructuras-y-sistemas-informaticos/aisi-apuntes-aisi-t4-infraestructura-cluster-pdf-7492871?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+
+  - name: "Seguridad en los Sistemas Informáticos"
+    topics:
+      - title: "[SSI] T1 - Criptología"
+        url: https://wuolah.com/apuntes/seguridad-en-los-sistemas-informaticos/ssi-apuntes-ssi-t1-criptologia-pdf-8380642?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
+      - title: "[SSI] T2 - Seguridad en el Correo Electrónico"
+        url: https://wuolah.com/apuntes/seguridad-en-los-sistemas-informaticos/ssi-apuntes-ssi-t2-seguridad-en-correo-electronico-pdf-8380643?utm_source=wuolah&utm_medium=referral&utm_campaign=file-sharefile&referral=ifmaipu4
