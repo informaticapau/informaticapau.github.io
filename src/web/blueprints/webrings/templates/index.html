@@ -8,17 +8,23 @@
     <h1 id="webrings">Web Rings</h1>
     <article>
         <section>
-            <h2 id="community">Comunidad</h2>
+        {%- for webring in webrings %}
+            <h2 >{{ webring['name'] }}</h2>
             <div class="webring">
+
+            {%- if webring['name'] == 'Comunidad' %}
                 <a href="https://www.informaticapau.com">
                     <img src="/{{ blueprint }}/static/img/88x31.gif" alt="Link to Informaticapau">
                 </a>
-                {%- for wb in webrings['community'] %}
-                <a target="_blank" href="{{ wb['url']}}">
-                    <img src="{{ wb['badge'] }}" alt="Link to {{ wb['name'] }}" onerror="">
+            {% endif -%}
+
+            {% for badge in webring['badges'] %}
+                <a target="_blank" href="{{ badge['url']}}">
+                    <img src="{{ badge['badge'] }}" alt="Link to {{ badge['name'] }}" onerror="">
                 </a>
-                {%- endfor %}
+            {% endfor -%}
             </div>
+        {% endfor -%}
         </section>
     </article>
 </main>

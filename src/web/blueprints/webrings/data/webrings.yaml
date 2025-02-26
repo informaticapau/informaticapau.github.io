@@ -1,4 +1,5 @@
-community:
+- name: Comunidad
+  badges:
   - name: ARFNET
     badge: https://arf20.com/88x31.png
     url: https://arf20.com
@@ -18,3 +19,9 @@ community:
   - name: gxog.xyz
     badge: https://gxog.xyz/webrings/web_badge
     url: https://gxog.xyz/
+
+- name: Conocidos
+  badges:
+  - name: alejandrovb
+    badge: https://alejandrovidalbralo.github.io/webrings/alejandrovb.gif
+    url: https://alejandrovidalbralo.github.io/
