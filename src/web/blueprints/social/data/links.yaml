@@ -13,6 +13,9 @@ rrss:
     YouTube:
       url: https://www.youtube.com/@informaticapau
       logo: https://simpleicons.vercel.app/youtube/FF0000
+    Twitch:
+      url: https://www.twitch.tv/informaticapau
+      logo: https://simpleicons.vercel.app/twitch/9146FF
 
 comunidad:
   name: "Comunidad"
