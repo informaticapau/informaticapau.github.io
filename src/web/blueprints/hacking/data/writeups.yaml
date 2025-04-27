@@ -1,3 +1,7 @@
+- name: ViCON 2025
+  img: /hacking/static/img/writeups/ctfs/ViCON_2025.svg
+  file: /hacking/static/files/writeups/ctfs/2025-04-26_ViCON.pdf
+  date: ['26','04','2025']
 - name: C3TF v2.23
   img: /hacking/static/img/writeups/ctfs/c3tf_v2.23.png
   file: /hacking/static/files/writeups/ctfs/2023-03-29_C3TF_v.2.23.pdf
