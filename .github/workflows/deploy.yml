@@ -23,7 +23,7 @@ jobs:
     # Paso 3: Instalar dependencias de Python
     - name: Install Dependencies
       run: |
-        pip install -r src/requirements.txt
+        pip install -r requirements.txt
 
     # Paso 4: Generar el sitio
     - name: Generate Site
