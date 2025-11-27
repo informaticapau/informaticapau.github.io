@@ -20,8 +20,8 @@
     badge: https://gxog.xyz/webrings/web_badge
     url: https://gxog.xyz/
 
-- name: Conocidos
-  badges:
-  - name: alejandrovb
-    badge: https://alejandrovidalbralo.github.io/webrings/alejandrovb.gif
-    url: https://alejandrovidalbralo.github.io/
+# - name: Conocidos
+#   badges:
+#   - name:
+#     badge:
+#     url:
