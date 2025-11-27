@@ -3,29 +3,29 @@ rrss:
   links:
     Instagram: 
       url: https://www.instagram.com/informaticapau/
-      logo: https://simpleicons.vercel.app/instagram/FF0069
+      logo: /static/img/vendor/simple-icons/instagram.svg
     Twitter/X:
       url:  https://twitter.com/informaticapau
-      logo: https://simpleicons.vercel.app/x/FFFFFF
+      logo: /static/img/vendor/simple-icons/x.svg
     GitHub:
       url: https://github.com/informaticapau
-      logo: https://simpleicons.vercel.app/github/FFFFFF
+      logo: /static/img/vendor/simple-icons/github.svg
     YouTube:
       url: https://www.youtube.com/@informaticapau
-      logo: https://simpleicons.vercel.app/youtube/FF0000
+      logo: /static/img/vendor/simple-icons/youtube.svg
     Twitch:
       url: https://www.twitch.tv/informaticapau
-      logo: https://simpleicons.vercel.app/twitch/9146FF
+      logo: /static/img/vendor/simple-icons/twitch.svg
 
 comunidad:
   name: "Comunidad"
   links:
     WhatsApp:
       url: https://chat.whatsapp.com/Jz6dbqz6gug0MGuj3hlsYZ
-      logo: https://simpleicons.vercel.app/whatsapp/25D366
+      logo: /static/img/vendor/simple-icons/whatsapp.svg
     Discord:
       url: https://discord.com/invite/UXZuAvW
-      logo: https://simpleicons.vercel.app/discord/5865F2
+      logo: /static/img/vendor/simple-icons/discord.svg
     Telegram:
       url: https://t.me/informaticapau_telegram
-      logo: https://simpleicons.vercel.app/telegram/26A5E4
+      logo: /static/img/vendor/simple-icons/telegram.svg
