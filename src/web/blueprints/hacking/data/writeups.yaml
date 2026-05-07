@@ -1,6 +1,6 @@
 - name: JNIC 2026
   img: /hacking/static/img/writeups/ctfs/JNIC_2026.png
-  file: /hacking/static/img/writeups/ctfs/2026-04-30_JNIC.pdf
+  file: /hacking/static/files/writeups/ctfs/2026-04-30_JNIC.pdf
   date: ['30','04','2026']
 - name: ViCON 2025
   img: /hacking/static/img/writeups/ctfs/ViCON_2025.svg
