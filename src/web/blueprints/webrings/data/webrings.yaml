@@ -1,5 +1,9 @@
 - name: Comunidad
   badges:
+  - name: Daniel Feito
+    badge: https://danielfeitopin.es/static/img/web_badge.gif
+    url: https://danielfeitopin.es
+    
   - name: ARFNET
     badge: https://arf20.com/88x31.png
     url: https://arf20.com
